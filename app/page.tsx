@@ -6,6 +6,7 @@ import Regras from '../components/Regras';
 import Equipamentos from '../components/Equipamentos';
 import Campo from '../components/Campo';
 import TabelaCompatibilidade from '../components/TabelaCompatibilidade';
+import Contato from '../components/Contato';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Campo />
       <Equipamentos />
       <TabelaCompatibilidade />
+      <Contato />
       <Footer />
     </main>
   );

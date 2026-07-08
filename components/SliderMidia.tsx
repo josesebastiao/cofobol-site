@@ -26,7 +26,8 @@ export default function SliderMidia() {
           {midias.map((item) => (
             <div 
               key={item.id} 
-              className="min-w-[85vw] md:min-w-[50vw] lg:min-w-[40vw] aspect-video rounded-3xl overflow-hidden snap-center shrink-0 shadow-lg border border-slate-700 bg-slate-800 relative group"
+              // AQUI ESTÁ A CORREÇÃO: flex-none impede o esmagamento, e w-[...] define a largura exata
+              className="flex-none w-[85vw] md:w-[60vw] lg:w-[45vw] aspect-video rounded-3xl overflow-hidden snap-center shadow-lg border border-slate-700 bg-black relative group"
             >
               {item.tipo === 'video' ? (
                 <iframe
@@ -46,7 +47,7 @@ export default function SliderMidia() {
               
               {/* Título sobreposto na foto */}
               {item.tipo === 'foto' && (
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 pointer-events-none">
+                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 pointer-events-none">
                   <h3 className="text-white font-bold text-xl">{item.titulo}</h3>
                 </div>
               )}

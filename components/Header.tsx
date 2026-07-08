@@ -17,7 +17,7 @@ export default function Header() {
           />
         </a>
 
-        {/* Botão do Menu Mobile (Hambúrguer) */}
+        {/* Botão do Menu Mobile */}
         <button 
           className="md:hidden z-50 flex flex-col gap-1.5 p-2 focus:outline-none"
           onClick={() => setMenuAberto(!menuAberto)}
@@ -33,16 +33,17 @@ export default function Header() {
           <a href="#historia" className="hover:text-green-600 transition">A História</a>
           <a href="#regras" className="hover:text-red-600 transition">As Regras</a>
           <a href="#midia" className="hover:text-blue-600 transition">Vídeos & Eventos</a>
+          <a href="#contato" className="hover:text-green-500 transition">Contato</a>
         </nav>
       </div>
 
-      {/* Tela do Menu Mobile (Abre em tela cheia) */}
+      {/* Tela do Menu Mobile */}
       <div className={`md:hidden fixed top-0 left-0 w-full h-[100dvh] bg-white flex flex-col items-center justify-center gap-10 font-black text-3xl transition-transform duration-300 ease-in-out ${menuAberto ? 'translate-x-0' : 'translate-x-full'}`}>
         <a href="#historia" onClick={() => setMenuAberto(false)} className="text-slate-800 hover:text-green-600">A História</a>
         <a href="#regras" onClick={() => setMenuAberto(false)} className="text-slate-800 hover:text-red-600">As Regras</a>
         <a href="#midia" onClick={() => setMenuAberto(false)} className="text-slate-800 hover:text-blue-600">Vídeos & Eventos</a>
+        <a href="#contato" onClick={() => setMenuAberto(false)} className="text-slate-800 hover:text-green-500">Contato</a>
         
-        {/* Enfeite visual no menu mobile */}
         <div className="absolute bottom-10 flex gap-2">
           <span className="w-3 h-3 rounded-full bg-red-600"></span>
           <span className="w-3 h-3 rounded-full bg-blue-600"></span>
