@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Historia from '../components/Historia';
 import SliderMidia from '../components/SliderMidia';
 import Regras from '../components/Regras';
+import TabelaCompatibilidade from '../components/TabelaCompatibilidade';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Historia />
       <SliderMidia />
       <Regras />
+      <TabelaCompatibilidade /> {/* <-- Tabela adicionada aqui! */}
       <Footer />
     </main>
   );
