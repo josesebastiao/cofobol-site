@@ -22,7 +22,7 @@ export default function Contato() {
             
             {/* LINK DO WHATSAPP - Substitua o "SEU_NUMERO_AQUI" */}
             <a 
-              href="https://wa.me/SEU_NUMERO_AQUI" 
+              href="https://wa.me/+244941748500" 
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-4 bg-green-500 hover:bg-green-600 text-white font-black py-4 px-10 rounded-full text-lg transition duration-300 shadow-lg shadow-green-500/30 flex items-center gap-3 w-full justify-center md:w-auto"
