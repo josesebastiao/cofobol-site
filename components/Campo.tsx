@@ -2,42 +2,38 @@ import React from 'react';
 
 export default function Campo() {
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-black mb-6 uppercase tracking-wide text-slate-900">
-          O <span className="text-green-600">Terreno</span> de Jogo
-        </h2>
-        <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-16 leading-relaxed">
-          O Cofobol adapta-se ao ambiente, podendo ser jogado em campos quadrados, retangulares (como futebol 11 e futsal), quadras multiusos ou até na rua, delimitando as pistas dos jogadores e árbitros.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="border-l-4 border-blue-600 pl-6 py-2">
-            <h4 className="text-2xl font-bold text-slate-900 mb-2">Formato e Medidas</h4>
-            <p className="text-slate-600 mb-4">
-              As <strong>Pistas</strong> devem ter no mínimo 20 metros e no máximo 40 metros de comprimento. A largura varia entre um mínimo de 2 metros e um máximo de 4 metros.
+    <section className="py-24 px-6 bg-slate-100 border-t border-slate-200">
+      <div className="max-w-6xl mx-auto">
+        <article className="overflow-hidden rounded-3xl bg-white shadow-sm border border-slate-200">
+          <div className="p-8 md:p-10">
+            <span className="inline-block mb-4 rounded-full bg-green-100 px-4 py-1 text-sm font-black uppercase tracking-wider text-green-700">Passo 5</span>
+            <h2 className="text-3xl md:text-4xl font-black mb-5 text-slate-900">
+              Terreno de jogo
+            </h2>
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-4xl">
+              O Cofobol adapta-se aos ambientes, podendo ser jogado em campos quadrados ou rectangulares, com quatro ou seis pilares.
             </p>
-          </div>
-          
-          <div className="border-l-4 border-green-600 pl-6 py-2">
-            <h4 className="text-2xl font-bold text-slate-900 mb-2">Superfícies Permitidas</h4>
-            <ul className="text-slate-600 space-y-2 list-disc ml-5 font-medium">
-              <li>Relva natural ou sintética.</li>
-              <li>Tatami ou Tartan.</li>
-              <li>Tapete peludo ou de plástico.</li>
-              <li>Pavimentada ou material maleável sem perigo.</li>
-            </ul>
-          </div>
-        </div>
 
-        {/* Imagem do Diagrama do Campo */}
-        <div className="mt-16 w-full rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-          <img 
-            src="/diagrama.jpg" 
-            alt="Diagrama do Campo de Cofobol" 
-            className="w-full object-cover"
-          />
-        </div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">Superfícies permitidas</h3>
+            <ol className="grid grid-cols-1 md:grid-cols-2 gap-3 list-decimal pl-6 text-slate-600 font-medium leading-relaxed">
+              <li>Relva natural ou sintética.</li>
+              <li>Tatami ou tartan.</li>
+              <li>Tapete peludo ou de plástico.</li>
+              <li>Pavimento ou outro material maleável que não constitua perigo para os utentes.</li>
+            </ol>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-slate-200">
+            <figure className="bg-white p-4 md:p-6">
+              <img src="/diagrama.jpg" alt="Diagrama de um campo de mini-Cofobol" className="h-full min-h-64 w-full rounded-2xl object-contain" />
+              <figcaption className="pt-3 text-center text-sm font-medium text-slate-500">Diagrama do campo de mini-Cofobol</figcaption>
+            </figure>
+            <figure className="bg-slate-900 p-4 md:p-6">
+              <img src="/foto2.jpeg" alt="Praticantes num campo de Cofobol" className="h-full min-h-64 w-full rounded-2xl object-cover" />
+              <figcaption className="pt-3 text-center text-sm font-medium text-slate-300">Campo de Cofobol em utilização</figcaption>
+            </figure>
+          </div>
+        </article>
       </div>
     </section>
   );

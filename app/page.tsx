@@ -16,9 +16,11 @@ export default function Home() {
       <Hero />
       <Historia />
       <SliderMidia />
-      <Regras />
-      <Campo />
-      <Equipamentos />
+      <section id="jogo" className="scroll-mt-20">
+        <Regras />
+        <Campo />
+        <Equipamentos />
+      </section>
       <TabelaCompatibilidade />
       <Contato />
       <Footer />
