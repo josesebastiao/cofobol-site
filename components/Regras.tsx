@@ -39,11 +39,26 @@ export default function Regras() {
             <span className="inline-block mb-4 rounded-full bg-blue-100 px-4 py-1 text-sm font-black uppercase tracking-wider text-blue-700">Passo 4</span>
             <h3 className="text-2xl font-bold text-white mb-6">Cartões disciplinares</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
-              <div className="rounded-2xl border-t-4 border-yellow-400 bg-slate-800 p-5"><h4 className="font-black text-yellow-300 mb-2">Amarelo</h4><p className="text-sm text-slate-300 leading-relaxed">Advertência por comportamento antidesportivo.</p></div>
-              <div className="rounded-2xl border-t-4 border-orange-500 bg-slate-800 p-5"><h4 className="font-black text-orange-400 mb-2">Laranja</h4><p className="text-sm text-slate-300 leading-relaxed">Suspensão por comportamento antidesportivo grave.</p></div>
-              <div className="rounded-2xl border-t-4 border-green-500 bg-slate-800 p-5"><h4 className="font-black text-green-400 mb-2">Verde</h4><p className="text-sm text-slate-300 leading-relaxed">Restauração: uma nova oportunidade para fazer melhor.</p></div>
-              <div className="rounded-2xl border-t-4 border-white bg-slate-800 p-5"><h4 className="font-black text-white mb-2">Branco</h4><p className="text-sm text-slate-300 leading-relaxed">Fair Play: vi uma boa acção que deve ser multiplicada.</p></div>
-              <div className="rounded-2xl border-t-4 border-red-600 bg-slate-800 p-5"><h4 className="font-black text-red-400 mb-2">Vermelho</h4><p className="text-sm text-slate-300 leading-relaxed">Expulsão por comportamento antidesportivo muito grave e desumano. Stop. Basta. Amanhã haverá mais.</p></div>
+              <div className="flex min-h-48 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 p-5 text-center">
+                <div role="img" aria-label="Cartão amarelo" className="h-24 w-16 rounded-md border border-yellow-200 bg-yellow-400 shadow-lg shadow-yellow-950/30" />
+                <p className="font-bold leading-relaxed text-slate-100">Corrige o comportamento.</p>
+              </div>
+              <div className="flex min-h-48 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 p-5 text-center">
+                <div role="img" aria-label="Cartão laranja" className="h-24 w-16 rounded-md border border-orange-300 bg-orange-500 shadow-lg shadow-orange-950/30" />
+                <p className="font-bold leading-relaxed text-slate-100">Corrige o comportamento.</p>
+              </div>
+              <div className="flex min-h-48 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 p-5 text-center">
+                <div role="img" aria-label="Cartão branco" className="h-24 w-16 rounded-md border border-slate-200 bg-white shadow-lg shadow-black/30" />
+                <p className="font-bold leading-relaxed text-slate-100">Premia o carácter.</p>
+              </div>
+              <div className="flex min-h-48 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 p-5 text-center">
+                <div role="img" aria-label="Cartão verde" className="h-24 w-16 rounded-md border border-green-300 bg-green-500 shadow-lg shadow-green-950/30" />
+                <p className="font-bold leading-relaxed text-slate-100">Dá uma nova chance.</p>
+              </div>
+              <div className="flex min-h-48 flex-col items-center justify-center gap-5 rounded-2xl bg-slate-800 p-5 text-center">
+                <div role="img" aria-label="Cartão vermelho" className="h-24 w-16 rounded-md border border-red-400 bg-red-600 shadow-lg shadow-red-950/30" />
+                <p className="font-bold leading-relaxed text-slate-100">Protege o grupo.</p>
+              </div>
             </div>
           </article>
         </div>

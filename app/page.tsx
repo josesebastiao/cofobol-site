@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Historia from '../components/Historia';
 import SliderMidia from '../components/SliderMidia';
 import Regras from '../components/Regras';
+import SistemaPontuacao from '../components/SistemaPontuacao';
 import Equipamentos from '../components/Equipamentos';
 import Campo from '../components/Campo';
 import TabelaCompatibilidade from '../components/TabelaCompatibilidade';
@@ -18,6 +19,7 @@ export default function Home() {
       <SliderMidia />
       <section id="jogo" className="scroll-mt-20">
         <Regras />
+        <SistemaPontuacao />
         <Campo />
         <Equipamentos />
       </section>
